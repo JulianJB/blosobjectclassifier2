@@ -82,7 +82,7 @@ for label in range(num_labels):
     firstHu = -np.sign(hu[0]) * np.log10(np.abs(hu[0]))
 
     # Get the class of the corresponding connected component
-    obj_class = (clasificar(np.round(firstHu, 4)))
+    obj_class = (classify(np.round(firstHu, 4)))
 
     # Types of object classes
     # Associate a color and a label to the object class of the connected component
